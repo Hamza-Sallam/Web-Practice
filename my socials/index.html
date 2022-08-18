@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamza Sallam's</title>
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> <!--for social icons ,seeeooooo -->
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap');
+       :root{
+        --font: 'Silkscreen', cursive;
+       }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #fdf0d5;
+        }
+        h2,h1,h3{
+            color: #823200
+        }
+        h1{
+            font-family:var(--font);
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: heding 2s ease-in-out 1;
+        }
+        h2{
+            font-family: var(--font);
+            text-align: center;
+            animation: social-heading 3s ease-in-out;
+        }
+        h3{
+            text-align: center;
+            margin-top: 13rem;
+            font-size: 30px;
+             font-family: 'DynaPuff', cursive;;
+        }
+        .socials{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            animation: social 3s ease-in-out;
+        }
+        i{
+            margin-right: 5px;
+            
+        }
+       .socials div{
+
+        text-align: center;
+        font-family: 'DynaPuff', cursive;
+        margin :60px;
+        transition: 0.4s ease-in-out;
+
+       }
+       a{
+        text-decoration: none;
+        color: #9e6240;
+        font-size: large;
+       }
+       .socials div:hover{
+        transform: scale(1.2);
+       }
+       .img-container{
+        width:20%;
+        margin: 0 auto;
+padding: 5px;
+padding-left: 0;
+margin-bottom: 2rem;
+       }
+       img{
+        height: 350px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 7%;
+        transition: 2s ease;
+       }
+       @keyframes heding {
+        from{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to{
+            opacity:1;
+        }
+    }
+        @keyframes social {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+            
+        }
+        
+        img:hover{
+            box-shadow: 5px 5px 5px  rgb(56, 54, 54);
+            transform: scale(1.1);
+        }
+        @keyframes social-heading {
+            from{opacity: 0;
+            transform: translateX(-200px)}
+        }
+        to{
+            opacity: 1;
+        }
+       
+    </style>
+    </head>
+    <body>
+        
+        <h1>Hamza Sallam</h1>
+        <div class="img-container">
+            <img src="./me.jpg" alt="photo of me">
+        </div>
+        <div class="container">
+            <h2>My socials</h2>
+            <div class="socials">
+               <div> <a href="https://www.instagram.com/hamzasallam._/"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></div>
+               <div> <a href="https://www.facebook.com/hamza.sallam.31/"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></div>
+               <div> <a href="https://www.linkedin.com/in/hamza-sallam/"><i class="fa-brands fa-linkedin-in"></i><span>Linkedin</span></div>
+               <div>   <a href="https://wa.me/00905525786880"> <i class="fa-brands fa-whatsapp"></i><span>whatsapp</span></a></div>
+               <div> <a href="https://www.snapchat.com/add/hamza_20015?share_id=NTgwNzI5REMtNUM0Ny00RkE3LUEwQzMtODk3NjI4RTgzMzgw&locale=en_SA@calendar=gregorian"> <i class="fa-brands fa-snapchat"></i><span>Snapchat</span> </a></div>
+               <div> <a href="https://www.7amza.site"><i class="fa-solid fa-user"></i><span>My Website</span></a></div>
+            </div>
+            <h3>
+                Lets be Friends! <i class="fa-solid fa-users"></i>
+            </h3>
+        </div>
+        
+    </body>
+</html>

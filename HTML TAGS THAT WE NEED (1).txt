@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast way learning HTML</title>
+<!--Framework boot-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!----------------------------------------------------------------->
+
+</head>
+<!--(br) The Line Break element-->
+
+
+<!--(id) CSS precedents and specificity-->
+<style>
+    h1{
+        color: rgb(21, 255, 0);
+    }
+    #h11{
+        color: red;
+    }
+</style>  
+ <h1 id="h11">hello dear red</h1>
+ <h1>hello dear green</h1>
+<!------------------------------------------------------------------------->
+ <!--Linking Document-->
+ <a href="loction of the file">file name loction</a>
+<!------------------------------------------------------------------------->
+    <!--login format-->
+    <form action="/registrion" method="post">
+        <label for="username">username:</label><br><!--username-->
+        <input type="text" name="username">
+
+        <label for ="password">password:</label><br> <!--writing the password without seeing the password-->
+        <input type="password"  />
+        <input type="submit"   />
+    </form>
+<!------------------------------------------------------------------------->
+    <!--check box format-->
+    <style>
+        table,th,td{
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse:collapse ;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th>dish</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>Fealfel</td>
+            <td>10$</td>-
+            <tr>
+                <td>pastta</td>
+                <td>4$</td>
+            </tr>
+        </tr>
+    </table>
+<!------------------------------------------------------------------------->
+    <!--check box format-->
+    <input type="checkbox" name="dog" value="dog" />
+    <label for="dog" >I own a dog</label><br>
+    <input type="checkbox" name="cat" value="cat" />
+    <label for="cat">i own a cat</label><br>
+<!------------------------------------------------------------------------->
+    <!--check radio button-->
+    <input type="radio" name="right" value="right"/>
+    <label for="right" >Iam right hand</label><br>
+    <input type="radio" name="left" value="left" />
+    <label for="left">Iam left-handed</label><br>
+<!------------------------------------------------------------------------->
+    <!--check other option-->
+    <input type="number" name="age"/>
+    <input type="email" name="email"/>
+    <input type="file" name="file"/>
+<!------------------------------------------------------------------------->
+    <!-- text area-->
+    <textareaname="multiline" rows="5"></textareaname>
+<!------------------------------------------------------------------------->
+    <!--drop down list-->
+    <select name ="foor">
+        <option value="chocolate">chocolate</option>
+        <option value="ice cream">Ice cream</option>
+
+    </select>
+<!------------------------------------------------------------------------->    
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-6"> <!--This can do what ever the class is with height and width same postion with phone or desktop with good shape--->
+            <table class="col-12 col-lg-6">
+                <h2>Prices</h2>
+
+            </table>
+<!--(br) alert message or danger ,etc-- you have to add framework Bootstrap and it should also there class call continer-->
+
+    <h2>Alerts</h2>
+    <div class="alert alert-success">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------->  
+<body>
+    
+</body>
+</html>

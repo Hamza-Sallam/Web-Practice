@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hamza</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Silkscreen&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:100%;
+    height: 100vh;
+    /* border: 4px solid red; */
+    
+
+}
+body{
+    background-color: #d5cad6;
+}
+.grp{
+
+height:50%;
+width: 50%;
+text-align: center;
+
+
+}
+
+#btn{
+    margin: 30px;
+}
+
+
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+   font-family: 'Silkscreen', cursive;
+   text-transform: capitalize;
+   animation: headingdown 4s ease-in-out infinite;
+   animation-fill-mode: none;
+}
+#btn{
+    padding:4px;
+    border-radius: 10%;
+    width: 5rem;
+    border: 3px solid black;
+    background: transparent;
+    animation: btn-box 6s ease-in 1; 
+transition: 0.4s  ease-in;
+
+}
+#Textbox{
+    padding:10px;
+border-radius: 5%;
+border: 3px solid   black;
+background: transparent;
+animation: btn-box 6s ease-in 1; 
+transition: 0.5s ease-in-out;
+}
+@keyframes headingdown{
+    /* from{
+    opacity: 0;
+    transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.1);
+    } */
+        0% {
+            opacity: 0;
+          transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+          transform: scale(2);
+        }
+        100% {
+            opacity: 0;
+          transform: scale(1);
+        }
+      }
+      
+
+@keyframes btn-box {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+/* @media screen and(max-width:414px) {
+    h3{
+        color:yellow;
+    }
+    
+} */
+#btn:hover{
+transform: scale(1.1);
+background: rgba(255, 255, 255,0.6);
+color:black;
+}
+#Textbox:hover{
+    transform: scale(1.1);
+}
+
+h6{
+    font-size: 15px;
+    font-family:'Silkscreen', cursive ;
+}
+</style>
+<link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
+</head>
+<body id="body">
+    <h6>
+ &copy By Hamza Sallam 
+    </h6>
+    <div class="container">
+    <div class="grp">
+    <h3>
+        pick a color to change the background
+    </h3>
+    <input type="text" name="Textbox" id="Textbox" placeholder="color">
+    <button id="btn"> choose</button>
+    </div>
+    <i class="fa-solid fa-rocket"></i>
+    </div>  
+    
+
+
+
+<script>
+var btn = document.getElementById("btn");
+var txtvalue= document.getElementById("Textbox").value;
+function colorPick(){
+    txtvalue = document.getElementById("Textbox").value;   
+    document.getElementById("body").style.background=txtvalue;
+    document.getElementById("body").style.transition="1s ease-in";
+}
+btn.addEventListener('click' , colorPick);
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
